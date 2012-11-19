@@ -1,0 +1,19 @@
+
+
+** Software
+| App              | Link          | App Store | Notes          |
+|------------------+---------------+-----------+----------------|
+| Calibre          | [[http://calibre-ebook.com/download_osx                                                               ][download_page]] |           |                |
+| Chrome           | [[https://www.google.com/chrome                                                                       ][download_page]] |           | + voice plugin |
+| Dropbox          | [[https://www.dropbox.com/install                                                                     ][download_page]] |           |                |
+| Evernote         | [[http://itunes.apple.com/app/evernote/id406056744?mt=12                                              ][download_page]] | y         |                |
+| Firefox          | [[http://www.mozilla.org/en-US/firefox/new/                                                           ][download_page]] |           |                |
+| Git              | [[http://git-scm.com/downloads                                                                        ][download_page]] |           |                |
+| Github (mac app) | [[http://mac.github.com/                                                                              ][download_page]] |           |                |
+| Inkscape         | [[http://inkscape.org/download/?lang=en                                                               ][download_page]] |           |                |
+| MacTex           | [[http://www.tug.org/mactex/                                                                          ][download_page]] |           |                |
+| Silverlight      | [[http://www.microsoft.com/getsilverlight/get-started/install/default.aspx?reason=unsupportedbrowser# ][download_page]] |           |                |
+| Skype            | [[http://www.skype.com/intl/en-us/get-skype/other-downloads/                                          ][download_page]] |           |                |
+| VirtualBox       | [[https://www.virtualbox.org/wiki/Downloads                                                           ][download_page]] |           |                |
+| VLC              | [[http://www.videolan.org/vlc/][download_page]] |           |                |
+| Zotero           |               |           | Add-ins … *zotero* |
