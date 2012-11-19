@@ -4,9 +4,9 @@
 ** Status
 The instructions are only complete and tested for Mac OSX lion up to Pandas. I need to test homebrew for the geospatial tools and R.
 
-** Software upgrade
-- Apple Icon (top left) 
-- Software Update ...
+** Apple software update
+- Click Apple Icon (top left) 
+- Select Software Update ...
 
 ** XCode
 *** Minimalist Xcode with command line tools (preferred) (https://developer.apple.com/downloads/index.action)
