@@ -1,12 +1,10 @@
-
-
 ** Software
 | App              | Link          | App Store | Notes          |
 |------------------+---------------+-----------+----------------|
 | Calibre          | [[http://calibre-ebook.com/download_osx                                                               ][download_page]] |           |                |
 | Chrome           | [[https://www.google.com/chrome                                                                       ][download_page]] |           | + voice plugin |
 | Dropbox          | [[https://www.dropbox.com/install                                                                     ][download_page]] |           |                |
-| Evernote         | [[http://itunes.apple.com/app/evernote/id406056744?mt=12                                              ][download_page]] | y         |                |
+| Evernote         | [[http://itunes.apple.com/app/evernote/id406056744?mt=12                                              ][download_page]] |           |                |
 | Firefox          | [[http://www.mozilla.org/en-US/firefox/new/                                                           ][download_page]] |           |                |
 | Git              | [[http://git-scm.com/downloads                                                                        ][download_page]] |           |                |
 | Github (mac app) | [[http://mac.github.com/                                                                              ][download_page]] |           |                |
