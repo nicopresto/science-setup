@@ -100,8 +100,8 @@ make
 sudo make install
 
 # clean up
-cd ~/.virtualenvs/py27/
-rm -rf build
+cd ~/.virtualenvs/YOUR_ENV_NAME/
+rm -r build
 
 brew install zmq
 
