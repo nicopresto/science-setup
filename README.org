@@ -84,7 +84,24 @@ pip install ipython
 
 brew install qt
 
-brew install pyqt
+
+#Note (sip&pyqt) pip commands FAIL. We complete the install by hand
+
+pip install sip
+cd ~/.virtualenvs/YOUR_ENV_NAME/build/sip
+python configure.py
+make 
+sudo make install
+
+pip install pyqt
+cd ~/.virtualenvs/YOUR_ENV_NAME/build/pyqt
+python configure.py
+make
+sudo make install
+
+# clean up
+cd ~/.virtualenvs/py27/
+rm -rf build
 
 brew install zmq
 
@@ -94,25 +111,7 @@ pip install pygments
 
 pip install tornado
 
-#Note (sip&pyqt) pip commands FAIL. We complete the install by hand
-
-pip install sip
-cd ~/.virtualenvs/py27/build/sip
-python configure.py
-make 
-sudo make install
-
-pip install pyqt
-cd ~/.virtualenvs/py27/build/pyqt
-python configure.py
-make
-sudo make install
-
-# clean up
-cd ~/.virtualenvs/py27/
-rm -rf build
-
-#brew install PySide
+# OPTION: brew install PySide
 
 #Install Pandas
 pip install nose cython
