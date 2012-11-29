@@ -147,6 +147,13 @@ NOTE: the following instructions need to be updated
 
 ** Geo tools
 ** GDAL framework, QGIS, PostgreSQL/PostGIS, 
+
+brew install postgresql
+brew install postgis
+brew install --HEAD osm2pgsql
+
+
+I traditionally installed these with Kyngchaos. As of last year Homebrew could install but wasn't recognized by QGIS.
 [[http://www.kyngchaos.com/software/unixport][KyngChaos precompiled binaries]]
 
 # Postgres
