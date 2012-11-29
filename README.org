@@ -31,9 +31,11 @@ Apple developer website
 
 ** Remaining packages with Homebrew
 
-[[http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/][Homebrew: Installing Python, virtualenv, NumPy, SciPy, matplotlib and IPython on Lion]]
+Install Homebrew
 
-[[http://mxcl.github.com/homebrew/][Homebrew page]]
+ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+
+Source: [[http://mxcl.github.com/homebrew/][Homebrew page]]
 
 #+BEGIN_QUOTE
 IMPORTANT: add /usr/local/bin to *top* of /private/etc/paths
@@ -251,8 +253,11 @@ then emacs and add:
 =ServerName localhost=
 
 ** References
-#Solution to Pyqt
+# Solution to Pyqt
 http://blog.adamdklein.com/?p=416
+
+[[http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/][Homebrew: Installing Python, virtualenv, NumPy, SciPy, matplotlib and IPython on Lion]]
+
 
 
 
