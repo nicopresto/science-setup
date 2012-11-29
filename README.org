@@ -131,6 +131,9 @@ ipython qtconsole --pylab=inline
 # Intall X11
 http://xquartz.macosforge.org/landing/
 
+# Experiment with the science brew tap (untested)
+https://github.com/Homebrew/homebrew-science
+
 #+END_EXAMPLE
 
 ** Settings preferences
