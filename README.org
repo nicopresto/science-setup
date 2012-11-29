@@ -42,7 +42,6 @@ IMPORTANT: add /usr/local/bin to *top* of /private/etc/paths
 #+END_QUOTE
 
 #+BEGIN_EXAMPLE
-# Commands from thisisthegreenroom instructions 
 
 brew install libjpeg
 brew install giflib
