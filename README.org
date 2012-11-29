@@ -131,6 +131,7 @@ ipython qtconsole --pylab=inline
 http://xquartz.macosforge.org/landing/
 
 #+END_EXAMPLE
+
 ** Settings preferences
 - Turn on left ctl caps switch (Keyboard Preferences > Modifier Keys)
 - Finder>View>Show Status bar
@@ -138,6 +139,11 @@ http://xquartz.macosforge.org/landing/
 - Drag Downloads to sidebar
 - Terminal change to pro with 100% opacity
 - Change machine name (hostname) (system preferences > sharing)
+
+===================================================================================
+
+
+NOTE: the following instructions need to be updated
 
 ** Geo tools
 ** GDAL framework, QGIS, PostgreSQL/PostGIS, 
