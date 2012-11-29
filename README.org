@@ -175,16 +175,6 @@ brew install postgis
 brew install --HEAD osm2pgsql
 
 
-I traditionally installed these with Kyngchaos. As of last year Homebrew could install but wasn't recognized by QGIS.
-[[http://www.kyngchaos.com/software/unixport][KyngChaos precompiled binaries]]
-
-# Postgres
-=sudo dscl . -create /Users/postgres UserShell /usr/bin/false=
-
-Add this to /private/etc/paths
-=/usr/local/pgsql-9.1/bin=
-
-
 ** Emacs/Auctex (install with homebrew) .. instead of healy (below)
 
 export HOMEBREWW_KEEP_INFO=1
