@@ -150,6 +150,26 @@ NOTE: the following instructions need to be updated
 
 brew install postgresql
 
+Create db:
+
+initdb /usr/local/var/postgres -E utf8
+
+If you have trouble with permissions, check that usr/local/var has group staff. If not
+
+sudo chown -R root:staff /usr/local/var
+
+If you still have problems then make your username the owner of /usr/local/var
+
+sudo chown -R $USER:staff /usr/local/var
+
+
+Test open a dbase:
+
+psql -d postgres
+
+(Ctrl-D to exit)
+
+
 brew install postgis
 
 brew install --HEAD osm2pgsql
