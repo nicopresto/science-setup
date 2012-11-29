@@ -149,7 +149,9 @@ NOTE: the following instructions need to be updated
 ** GDAL framework, QGIS, PostgreSQL/PostGIS, 
 
 brew install postgresql
+
 brew install postgis
+
 brew install --HEAD osm2pgsql
 
 
