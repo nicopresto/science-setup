@@ -147,6 +147,13 @@ http://johnmacfarlane.net/pandoc/installing.html
 ## Install NBConvert
 git clone git://github.com/ipython/nbconvert.git
 
+
+# Intall Pygame
+brew install sdl sdl_image sdl_mixer sdl_ttf smpeg portmidi 
+## Download the dmg b/c pip not working with headers
+brew install sdl sdl_image sdl_mixer sdl_ttf smpeg portmidi 
+pip install hg+http://bitbucket.org/pygame/pygame
+
 #+END_EXAMPLE
 
 ** Settings preferences
