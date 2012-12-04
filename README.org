@@ -139,6 +139,8 @@ pip install markdown
 curl http://docutils.svn.sourceforge.net/viewvc/docutils/trunk/docutils/?view=tar > docutils.tgz
 pip install -U docutils.tgz
 
+## Install Pandoc
+http://johnmacfarlane.net/pandoc/installing.html
 
 #+END_EXAMPLE
 
