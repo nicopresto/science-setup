@@ -134,6 +134,12 @@ http://xquartz.macosforge.org/landing/
 # Experiment with the science brew tap (untested)
 https://github.com/Homebrew/homebrew-science
 
+# Add doc conversion for ipython notebook
+pip install markdown
+curl http://docutils.svn.sourceforge.net/viewvc/docutils/trunk/docutils/?view=tar > docutils.tgz
+pip install -U docutils.tgz
+
+
 #+END_EXAMPLE
 
 ** Settings preferences
