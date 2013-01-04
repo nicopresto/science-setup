@@ -17,6 +17,7 @@ Apple developer website
 ** Paths
 - Lion uses the /private directory rather than .bash_profile
 =sudo nano /private/etc/paths=
+(put /usr/local/bin 1st)
 
 #+BEGIN_EXAMPLE
 # Example of paths file
@@ -59,14 +60,14 @@ cd /System/Library/Frameworks/Python.framework/Versions
 sudo rm Current
 
 # you may need to sub your version for 2.7.3
-ln -s /usr/local/Cellar/python/2.7.3/Frameworks/Python.framework/Versions/Current
+sudo ln -s /usr/local/Cellar/python/2.7.3/Frameworks/Python.framework/Versions/Current
 
 sudo easy_install pip
 
-pip install virtualenv
-pip install virtualenvwrapper
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
 
-source /usr/local/share/python/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 # add this source virtualenvwrapper to .bash_profile and restart terminal
 
