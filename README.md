@@ -121,26 +121,27 @@ pip install pandas
 #dev not working right now 19nov12
 #pip install -e git+https://github.com/wesm/pandas#egg=pandas
 ```
-# Install statsmodels
+
+## Install statsmodels
 ```
 pip install statsmodels
 #dev not working right now 19nov12
 #pip install -e git+https://github.com/statsmodels/statsmodels#egg=statsmodels
 ```
 
-# TEST
+TEST
     ipython qtconsole --pylab=inline
 
-# Intall X11
+Intall X11
     http://xquartz.macosforge.org/landing/
 
-# Experiment with the science brew tap (untested)
+Experiment with the science brew tap (untested)
    https://github.com/Homebrew/homebrew-science
 
-## Add doc conversion for ipython notebook 
-NBConvert is in active dev and not yet available via package manager
+Add doc conversion for ipython notebook 
+    NBConvert is in active dev and not yet available via package manager
 
-### Dependencies
+## Dependencies
 ```
 pip install markdown
 curl http://docutils.svn.sourceforge.net/viewvc/docutils/trunk/docutils/?view=tar > docutils.tgz
@@ -194,11 +195,8 @@ brew install auctex
 Use Home Brew (above)
 ```
 brew install curl
-
 brew install aspell
-
 brew install ack
-
 ```
 
 ### edit .emacs file
