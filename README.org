@@ -166,40 +166,6 @@ pip install hg+http://bitbucket.org/pygame/pygame
 - Terminal change to pro with 100% opacity
 - Change machine name (hostname) (system preferences > sharing)
 
-===================================================================================
-
-
-NOTE: the following instructions need to be updated
-
-** Geo tools
-** GDAL framework, QGIS, PostgreSQL/PostGIS, 
-
-brew install postgresql
-
-Create db:
-
-initdb /usr/local/var/postgres -E utf8
-
-If you have trouble with permissions, check that usr/local/var has group staff. If not
-
-sudo chown -R root:staff /usr/local/var
-
-If you still have problems then make your username the owner of /usr/local/var
-
-sudo chown -R $USER:staff /usr/local/var
-
-
-Test open a dbase:
-
-psql -d postgres
-
-(Ctrl-D to exit)
-
-
-brew install postgis
-
-brew install --HEAD osm2pgsql
-
 
 ** Emacs/Auctex (install with homebrew) .. instead of healy (below)
 
@@ -266,6 +232,47 @@ http://cran.r-project.org/
 > setRepositories(ind=1:2)
 >install.packages('rgdal')
 #+END_EXAMPLE
+
+===================================================================================
+
+
+NOTE: some of the following instructions need to be updated
+
+** Geo tools
+** GDAL framework, QGIS, PostgreSQL/PostGIS, 
+
+brew install postgresql
+
+Create db:
+
+initdb /usr/local/var/postgres -E utf8
+
+If you have trouble with permissions, check that usr/local/var has group staff. If not
+
+sudo chown -R root:staff /usr/local/var
+
+If you still have problems then make your username the owner of /usr/local/var
+
+sudo chown -R $USER:staff /usr/local/var
+
+
+Test open a dbase:
+
+psql -d postgres
+
+(Ctrl-D to exit)
+
+
+brew install postgis
+
+brew install --HEAD osm2pgsql
+
+
+=============
+
+** Update Ruby with Homebrew
+brew install ruby
+sudo gem install bundle
 
 
 ** Enable Apache
