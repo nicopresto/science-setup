@@ -274,6 +274,8 @@ brew install --HEAD osm2pgsql
 brew install ruby
 sudo gem install bundle
 
+*** Install RVM for gem management
+\curl -L https://get.rvm.io | bash -s stable --ruby
 
 ** Enable Apache
 
