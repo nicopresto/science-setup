@@ -129,29 +129,29 @@ pip install statsmodels
 #pip install -e git+https://github.com/statsmodels/statsmodels#egg=statsmodels
 ```
 
-TEST
+### TEST
     ipython qtconsole --pylab=inline
 
-Intall X11
+### Intall X11
     http://xquartz.macosforge.org/landing/
 
-Experiment with the science brew tap (untested)
+### Experiment with the science brew tap (untested)
    https://github.com/Homebrew/homebrew-science
 
-Add doc conversion for ipython notebook 
+### Add doc conversion for ipython notebook 
     NBConvert is in active dev and not yet available via package manager
 
-## Dependencies
+### Dependencies
 ```
 pip install markdown
 curl http://docutils.svn.sourceforge.net/viewvc/docutils/trunk/docutils/?view=tar > docutils.tgz
 pip install -U docutils.tgz
 ```
 
-## Install Pandoc
+### Install Pandoc
     http://johnmacfarlane.net/pandoc/installing.html
 
-## Install NBConvert
+### Install NBConvert
     git clone git://github.com/ipython/nbconvert.git
 
 
