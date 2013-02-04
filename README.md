@@ -16,8 +16,8 @@ Apple developer website
 
 ## Paths
 - Lion uses the /private directory rather than .bash_profile
-=sudo nano /private/etc/paths=
-(put /usr/local/bin 1st)
+    sudo nano /private/etc/paths
+- put /usr/local/bin 1st
 
 ```
 # Example of paths file
@@ -30,34 +30,32 @@ Apple developer website
 /usr/local/pgsql-9.1/bin
 ```
 
-## Remaining packages with Homebrew
+## Install software with the Homebrew package manager
 
-Install Homebrew
+Install [http://mxcl.github.com/homebrew/](Homebrew)
 
     ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
-Source: [[http://mxcl.github.com/homebrew/][Homebrew page]]
-
-    IMPORTANT: add /usr/local/bin to ##top## of /private/etc/paths
+    IMPORTANT: add /usr/local/bin to **top** of /private/etc/paths
 
 ```
 brew install libjpeg
 brew install giflib
 brew install imagemagick
-
 brew install readline sqlite gdbm pkg-config
 brew install python --framework --universal
 ```
 
 add: /usr/local/share/python to /private/etc/paths
 
-change python current version link
+change link to **current** Python version
 
-    cd /System/Library/Frameworks/Python.framework/Versions
-
-    sudo rm Current
-
-you may need to sub your version for 2.7.3
+```
+cd /System/Library/Frameworks/Python.framework/Versions
+sudo rm Current
+```
+## Setup virtual environments for Python
+**Note:** you may need to sub your version number (e.g. 2.7.3)
 
 ```
 sudo ln -s /usr/local/Cellar/python/2.7.3/Frameworks/Python.framework/Versions/Current
@@ -67,13 +65,23 @@ sudo pip install virtualenvwrapper
 
 source /usr/local/share/python/virtualenvwrapper.sh
 # or source /usr/local/bin/virtualenvwrapper.sh
-# add this source virtualenvwrapper to .bash_profile and restart terminal
+```
 
-mkvirtualenv test1
-workon test1
+Add this source virtualenvwrapper to .bash_profile and restart terminal
 
+Create a new virtual environment (e.g. myenv) then switch (workon) to this environment wish to install Python libraries
+
+```
+mkvirtualenv myenv
+workon myenv
+```
+
+You should now see the name of the environment (e.g. myenv) in the command prompt
+
+### Install the Python libraries
+
+```
 pip install numpy
-
 brew install gfortran
 
 pip install -e git+https://github.com/scipy/scipy#egg=scipy-dev
@@ -83,22 +91,30 @@ pip install -e git+https://github.com/matplotlib/matplotlib#egg=matplotlib-dev
 pip install ipython
 
 brew install qt
+```
 
-#Note (sip&pyqt) pip commands FAIL. We complete the install by hand
+    **Note:** the pip commands for Sip and PyQT will **FAIL**. Complete the install by hand
 
+### Sip
+```
 pip install sip
 cd ~/.virtualenvs/YOUR_ENV_NAME/build/sip
 python configure.py
-make 
+make
 sudo make install
+```
 
+### PyQT
+```
 pip install pyqt
 cd ~/.virtualenvs/YOUR_ENV_NAME/build/pyqt
 python configure.py
 make
 sudo make install
+```
 
-# clean up
+### clean up
+```
 cd ~/.virtualenvs/YOUR_ENV_NAME/
 rm -r build
 
@@ -111,7 +127,6 @@ pip install pygments
 pip install tornado
 
 # OPTION: brew install PySide
-
 ```
 
 ## Install Pandas
