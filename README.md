@@ -305,9 +305,8 @@ Add to httpd.conf
     ServerName localhost
 
 ## References
-- Solution to Pyqt
-http://blog.adamdklein.com/?p=416
-[Homebrew: Installing Python, virtualenv, NumPy, SciPy, matplotlib and IPython on Lion](http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/)
+- [Solution to Pyqt](http://blog.adamdklein.com/?p=416)
+- [Homebrew: Installing Python, virtualenv, NumPy, SciPy, matplotlib and IPython on Lion](http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/)
 
 
 
