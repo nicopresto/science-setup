@@ -16,7 +16,7 @@ Use the App Store (access from dock or Applications)
 Apple developer website
 
 ## Paths
-- Lion uses the /private directory rather than .bash_profile
+- Mountain Lion uses the /private directory rather than .bash_profile
     sudo nano /private/etc/paths
 - put /usr/local/bin 1st
 
