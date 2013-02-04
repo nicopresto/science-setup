@@ -1,4 +1,4 @@
-# Scientific setup on Mac
+# My scientific setup on Mac
 (Currently Mac OSX 10.8 Mountain Lion) 
 
 ## Status
@@ -237,7 +237,9 @@ OLDER instructions
 
 ## R
 Use Homebrew, e.g.
+
     brew install r
+
 http://cran.r-project.org/
 
 ### RGDAL, from R
