@@ -1,4 +1,4 @@
-# My scientific setup on Mac
+# Scientific setup on Mac
 (Currently Mac OSX 10.8 Mountain Lion) 
 
 ## Status
