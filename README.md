@@ -95,7 +95,7 @@ brew install qt
 
     **Note:** the pip commands for Sip and PyQT will **FAIL**. Complete the install by hand
 
-### Sip
+### SIP
 ```
 pip install sip
 cd ~/.virtualenvs/YOUR_ENV_NAME/build/sip
@@ -117,19 +117,18 @@ sudo make install
 ```
 cd ~/.virtualenvs/YOUR_ENV_NAME/
 rm -r build
-
-brew install zmq
-
-pip install pyzmq
-
-pip install pygments
-
-pip install tornado
-
-# OPTION: brew install PySide
 ```
 
-## Install Pandas
+### Install more packages
+```
+brew install zmq
+pip install pyzmq
+pip install pygments
+pip install tornado
+# Optional: brew install PySide
+```
+
+### Install Pandas
 ```
 pip install nose cython
 pip install pandas
@@ -137,7 +136,7 @@ pip install pandas
 #pip install -e git+https://github.com/wesm/pandas#egg=pandas
 ```
 
-## Install statsmodels
+### Install statsmodels
 ```
 pip install statsmodels
 #dev not working right now 19nov12
@@ -169,14 +168,12 @@ pip install -U docutils.tgz
 ### Install NBConvert
     git clone git://github.com/ipython/nbconvert.git
 
-
 ## Intall Pygame
 ```
 brew install sdl sdl_image sdl_mixer sdl_ttf smpeg portmidi 
 ## Download the dmg b/c pip not working with headers
 brew install sdl sdl_image sdl_mixer sdl_ttf smpeg portmidi 
 pip install hg+http://bitbucket.org/pygame/pygame
-
 ```
 
 ## Settings preferences
@@ -187,13 +184,10 @@ pip install hg+http://bitbucket.org/pygame/pygame
 - Terminal change to pro with 100% opacity
 - Change machine name (hostname) (system preferences > sharing)
 
-
-## Emacs/Auctex (install with homebrew) .. instead of healy (below)
+## Emacs/Auctex (install with homebrew) 
 ```
 export HOMEBREWW_KEEP_INFO=1
-
 brew install emacs --cocoa --srgb
-
 brew install auctex
 ```
 
@@ -205,9 +199,8 @@ brew install auctex
 - Symlink HeVeA so that MacTeX can find it "ln -s /usr/local/lib/hevea /usr/local/texlive/texmf-local/tex/latex/hevea"
 - Run "mktexlsr" so that MacTeX finds HeVeA
 
-
 ## Install Emacs 
-Use Home Brew (above)
+Use Homebrew (above)
 ```
 brew install curl
 brew install aspell
@@ -237,12 +230,14 @@ Install prelude
     PRELUDE_INSTALL_DIR="$HOME/.emacs.d" && curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
 
 OLDER instructions
-- Then follow [[http://kieranhealy.org/emacs-starter-kit.html][Kieren's Guide]] for installation and .emacs configs
-- wget http://alpha.gnu.org/gnu/emacs/pretest/emacs-24.0.95.tar.gz
-
-#./configure --x-includes=/usr/X11/include --x-libraries=/usr/X11/lib
+- Follow [http://kieranhealy.org/emacs-starter-kit.html](Kieren Healy's Guide) for installation and .emacs configs
+- Use Homebrew insted of WGEG
+    e.g. (deprecated) wget http://alpha.gnu.org/gnu/emacs/pretest/emacs-24.0.95.tar.gz
+    ./configure --x-includes=/usr/X11/include --x-libraries=/usr/X11/lib
 
 ## R
+Use Homebrew, e.g.
+    brew install r
 http://cran.r-project.org/
 
 ### RGDAL, from R
@@ -250,14 +245,13 @@ http://cran.r-project.org/
 - open dmg drag tgz to downloads
 - then install from local source and select tgz
 
- this wasn't working
+This wasn't working
 ```
 > setRepositories(ind=1:2)
 >install.packages('rgdal')
 ```
 
-===================================================================================
-
+===============================================================
 
 NOTE: some of the following instructions need to be updated
 
@@ -303,11 +297,8 @@ sudo gem install bundle
     \curl -L https://get.rvm.io | bash -s stable --ruby
 
 ## Enable Apache
-
     sudo chown u+w /etc/apache2/httpd.conf
-
-then emacs and add:
-
+Add to httpd.conf
     ServerName localhost
 
 ## References
