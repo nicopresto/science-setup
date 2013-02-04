@@ -9,8 +9,9 @@ The instructions are only complete and tested for Mac OSX lion up to Pandas. I n
 - Select Software Update ...
 
 ## XCode
-### Minimalist Xcode with command line tools (preferred) https://developer.apple.com/downloads/index.action
-### Full Xcode (12G)
+1) Minimalist Xcode with command line tools (**preferred**) https://developer.apple.com/downloads/index.action
+
+2) Full Xcode (12G)
 Use the App Store (access from dock or Applications)
 Apple developer website
 
