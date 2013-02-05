@@ -265,7 +265,9 @@ Use Homebrew, e.g.
 http://cran.r-project.org/
 
 # Ruby
+
 ## Update Ruby with Homebrew
+
 ```
 brew install ruby
 sudo gem install bundle
