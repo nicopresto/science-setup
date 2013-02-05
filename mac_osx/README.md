@@ -5,12 +5,12 @@
 The instructions are only complete and tested for Mac OSX lion up to Pandas. I need to test homebrew for the geospatial tools and R.
 
 # TOC
-## System
-## Homebrew
-## Python
-## Geospatial
-## R
-## Ruby
+- System
+- Homebrew
+- Python
+- Geospatial
+- R
+- Ruby
 
 # System
 ## Apple software update
