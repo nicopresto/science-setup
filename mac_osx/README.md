@@ -4,9 +4,26 @@
 ## Status
 The instructions are only complete and tested for Mac OSX lion up to Pandas. I need to test homebrew for the geospatial tools and R.
 
+# TOC
+## System
+## Homebrew
+## Python
+## Geospatial
+## R
+## Ruby
+
+# System
 ## Apple software update
 - Click Apple Icon (top left) 
 - Select Software Update ...
+
+## Settings preferences
+- Turn on left ctl caps switch (Keyboard Preferences > Modifier Keys)
+- Finder>View>Show Status bar
+- Preferences Dock > Auto-hide
+- Drag Downloads to sidebar
+- Terminal change to pro with 100% opacity
+- Change machine name (hostname) (system preferences > sharing)
 
 ## XCode
 1) **Preferred** Minimalist Xcode with [command line tools](https://developer.apple.com/downloads/index.action)
@@ -31,6 +48,12 @@ Apple developer website
 /usr/local/pgsql-9.1/bin
 ```
 
+## Enable Apache
+    sudo chown u+w /etc/apache2/httpd.conf
+Add to httpd.conf
+    ServerName localhost
+
+# Homebrew
 ## Install software with the Homebrew package manager
 
 Install [http://mxcl.github.com/homebrew/](Homebrew)
@@ -44,6 +67,10 @@ brew install libjpeg
 brew install giflib
 brew install imagemagick
 brew install readline sqlite gdbm pkg-config
+```
+
+# Python
+```
 brew install python --framework --universal
 ```
 
@@ -56,7 +83,7 @@ cd /System/Library/Frameworks/Python.framework/Versions
 sudo rm Current
 ```
 ## Setup virtual environments for Python
-**Note:** you may need to sub your version number (e.g. 2.7.3)
+**Note:** you may need to substitute your version number (e.g. 2.7.3)
 
 ```
 sudo ln -s /usr/local/Cellar/python/2.7.3/Frameworks/Python.framework/Versions/Current
@@ -79,7 +106,7 @@ workon myenv
 
 You should now see the name of the environment (e.g. myenv) in the command prompt
 
-### Install the Python libraries
+## Install the Python libraries
 
 ```
 pip install numpy
@@ -120,7 +147,7 @@ cd ~/.virtualenvs/YOUR_ENV_NAME/
 rm -r build
 ```
 
-### Install more packages
+### Install more Python packages
 ```
 brew install zmq
 pip install pyzmq
@@ -177,14 +204,7 @@ brew install sdl sdl_image sdl_mixer sdl_ttf smpeg portmidi
 pip install hg+http://bitbucket.org/pygame/pygame
 ```
 
-## Settings preferences
-- Turn on left ctl caps switch (Keyboard Preferences > Modifier Keys)
-- Finder>View>Show Status bar
-- Preferences Dock > Auto-hide
-- Drag Downloads to sidebar
-- Terminal change to pro with 100% opacity
-- Change machine name (hostname) (system preferences > sharing)
-
+# Emacs & Latex
 ## Emacs/Auctex (install with homebrew) 
 ```
 export HOMEBREWW_KEEP_INFO=1
@@ -200,15 +220,14 @@ brew install auctex
 - Symlink HeVeA so that MacTeX can find it "ln -s /usr/local/lib/hevea /usr/local/texlive/texmf-local/tex/latex/hevea"
 - Run "mktexlsr" so that MacTeX finds HeVeA
 
-## Install Emacs 
-Use Homebrew (above)
+## Install Emacs components 
 ```
 brew install curl
 brew install aspell
 brew install ack
 ```
 
-### edit .emacs file
+### Add Melpa package manager by editing .emacs file
 ```
 (require 'package)
 (add-to-list 'package-archives
@@ -230,31 +249,35 @@ add emacs packages
 Install prelude
     PRELUDE_INSTALL_DIR="$HOME/.emacs.d" && curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
 
-OLDER instructions
+Deprecated (but still useful) instructions
 - Follow [http://kieranhealy.org/emacs-starter-kit.html](Kieren Healy's Guide) for installation and .emacs configs
-- Use Homebrew insted of WGEG
-    e.g. (deprecated) wget http://alpha.gnu.org/gnu/emacs/pretest/emacs-24.0.95.tar.gz
+- Healy docs use wget instead of homebrew, e.g. 
+    wget http://alpha.gnu.org/gnu/emacs/pretest/emacs-24.0.95.tar.gz
     ./configure --x-includes=/usr/X11/include --x-libraries=/usr/X11/lib
 
-## R
+# R
 Use Homebrew, e.g.
 
     brew install r
 
 http://cran.r-project.org/
 
-### RGDAL, from R
-#downloaded from kyngchaos
+
+=============
+Needs update
+=============
+
+# Geospatial
+## RGDAL, from R
+Download from kyngchaos
 - open dmg drag tgz to downloads
 - then install from local source and select tgz
 
 This wasn't working
 ```
 > setRepositories(ind=1:2)
->install.packages('rgdal')
+> install.packages('rgdal')
 ```
-
-===============================================================
 
 NOTE: some of the following instructions need to be updated
 
@@ -298,11 +321,6 @@ sudo gem install bundle
 
 ## Install RVM for gem management
     \curl -L https://get.rvm.io | bash -s stable --ruby
-
-## Enable Apache
-    sudo chown u+w /etc/apache2/httpd.conf
-Add to httpd.conf
-    ServerName localhost
 
 ## References
 - [Solution to Pyqt](http://blog.adamdklein.com/?p=416)
