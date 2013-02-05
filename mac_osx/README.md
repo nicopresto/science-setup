@@ -34,11 +34,13 @@ Apple developer website
 
 ## Paths
 - Mountain Lion uses the /private directory rather than .bash_profile
+
     sudo nano /private/etc/paths
-- put /usr/local/bin 1st
+
+- Then, put /usr/local/bin first
 
 ```
-# Example of paths file
+# Example of final paths file
 /usr/local/bin
 /usr/bin
 /bin
