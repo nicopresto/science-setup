@@ -6,7 +6,7 @@ My colleagues and I have developed these notes over the years, as we've configur
 These notes come with no guarantee, they may not work a week from now. However, they reflect the last time one of us needed to configure a machine or VM.
 
 Hope they're useful.
-- @nicopresto
+- [nicopresto](https://github.com/nicopresto)
 
 ## Status
 - Mac OSX notes are about 90% up-to-date
@@ -15,9 +15,9 @@ Hope they're useful.
 
 
 ## Contibutors
-- @amakama
-- @cafreije
-- @cmzambranat
-- @mgibson
-- @soride
-- @zack-krejci
+- [amakama](https://github.com/amakama)
+- [cafreije](https://github.com/cafreije)
+- [cmzambranat](https://github.com/cmzambranat)
+- [mgibson](https://github.com/mgibson)
+- [soride](https://github.com/soride)
+- [zack-krejci](https://github.com/zack-krejci)
