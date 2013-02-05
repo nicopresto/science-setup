@@ -62,7 +62,7 @@ Install [http://mxcl.github.com/homebrew/](Homebrew)
 
     ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
-    IMPORTANT: add /usr/local/bin to **top** of /private/etc/paths
+IMPORTANT: add /usr/local/bin to **top** of /private/etc/paths
 
 ```
 brew install libjpeg
@@ -264,9 +264,18 @@ Use Homebrew, e.g.
 
 http://cran.r-project.org/
 
+# Ruby
+## Update Ruby with Homebrew
+```
+brew install ruby
+sudo gem install bundle
+```
+
+## Install RVM for gem management
+    \curl -L https://get.rvm.io | bash -s stable --ruby
 
 =============
-Needs update
+# Needs update
 =============
 
 # Geospatial
@@ -315,16 +324,9 @@ Test open a dbase:
 
 =============
 
-## Update Ruby with Homebrew
-```
-brew install ruby
-sudo gem install bundle
-```
 
-## Install RVM for gem management
-    \curl -L https://get.rvm.io | bash -s stable --ruby
 
-## References
+# References
 - [Solution to Pyqt](http://blog.adamdklein.com/?p=416)
 - [Homebrew: Installing Python, virtualenv, NumPy, SciPy, matplotlib and IPython on Lion](http://www.thisisthegreenroom.com/2011/installing-python-numpy-scipy-matplotlib-and-ipython-on-lion/)
 
