@@ -8,9 +8,9 @@ The instructions are only complete and tested for Mac OSX lion up to Pandas. I n
 - System
 - Homebrew
 - Python
-- Geospatial
 - R
 - Ruby
+- Geospatial
 
 # System
 ## Apple software update
