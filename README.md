@@ -12,10 +12,8 @@ Hope they're useful.
 - [nicopresto](https://github.com/nicopresto)
 
 ## Status
-- Mac OSX notes are about 90% up-to-date
-- Linux (Ubuntu) notes are excluded until updated
-- Setup scripts (fabfiles) will follow
-
+- Deprecated in favor of Boxen (Github's Puppet-based config tool)
+- Linux (Ubuntu) notes are available as fabfiles in my [pavlov repo](https://github.com/nicopresto/pavlov)
 
 ## Contibutors
 - [amakama](https://github.com/amakama)
